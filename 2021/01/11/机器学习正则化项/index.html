@@ -132,9 +132,10 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h4 id="正则化（Regularization）"><a href="#正则化（Regularization）" class="headerlink" title="正则化（Regularization）"></a>正则化（Regularization）</h4><p>机器学习中几乎都可以看到损失函数后面会添加一个额外项，常用的额外项一般有两种，为<strong>L1正则化</strong>和<strong>L2正则化</strong>，或者L1范数和L2范数。</p>
+                <h4 id="正则化（Regularization）"><a href="#正则化（Regularization）" class="headerlink" title="正则化（Regularization）"></a><strong>正则化（Regularization）</strong></h4><p>机器学习中几乎都可以看到损失函数后面会添加一个额外项，常用的额外项一般有两种，为<strong>L1正则化</strong>和<strong>L2正则化</strong>，或者 L1范数和L2范数。</p>
 <p>L1正则化和L2正则化可以看做是损失函数的惩罚项。所谓『惩罚』是指对损失函数中的某些参数做一些限制。对于线性回归模型，使用L1正则化的模型建叫做<strong>Lasso回归</strong>，使用L2正则化的模型叫做<strong>Ridge回归</strong>（岭回归）。</p>
-<p>公式绝对值后面的1、2即为正则化项。</p>
+<script type="math/tex; mode=display">
+\min _{w} \frac{1}{2 n_{\text {samples }}}\|X w-y\|_{2}^{2}+\alpha\|w\|_{1}</script><p>公式绝对值后面的1、2即为正则化项。</p>
 <p>一般回归分析中回归表示特征的系数，从上式可以看到正则化项是对系数做了处理（限制）。<br>L1正则化是指权值向量中各个元素的绝对值之和<br>L2正则化是指权值向量中各个元素的平方和然后再求平方根</p>
 <p>L1和L2正则化项的<strong>作用</strong>：<br>L1正则化可以产生稀疏权值矩阵，即产生一个稀疏模型，可以用于特征选择<br>L2正则化可以防止模型过拟合（overfitting）；一定程度上，L1也可以防止过拟合</p>
 
