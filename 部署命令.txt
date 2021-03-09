@@ -1,0 +1,4 @@
+在本页右键选择git bash here
+hexo g
+hexo s #测试
+hexo d
